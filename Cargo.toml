@@ -1,0 +1,18 @@
+[package]
+name = "cloud-zsync"
+version = "0.1.0"
+authors = ["Viktor Sokolov <gzigzigzeo@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+argh = { version = "^0.1" }
+fastcdc = { version = "^3.1" }
+blake3 = { version = "^1.5", features = ["serde"] }
+globwalk = "^0.9"
+indicatif = "0.16"
+serde = { version = "^1.0" }
+serde_json = { version = "^1.0" }
+console = { version = "^0.15" }
+humansize = { version = "^2.1" }
+uuid = { version = "^1.0", features = ["v4"] }
+tempfile = { version = "^3.10" }
