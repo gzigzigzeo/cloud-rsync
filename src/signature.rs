@@ -7,8 +7,13 @@ use std::io::Read;
 
 use crate::blake3_serde_hex;
 
-/// TODO: I think, CopyOp and InsertOp can now be refactored into a single structure with
-/// the same interface.
+/// TODO:
+///
+/// I think, it worth trying to merge CopyOp and InsertOp into a single struct.
+/// This struct would have: kind, target_offset, source_offset, length, uuid.
+/// InsertOp would have both offsets the same.
+///
+/// It may make things simpler.
 
 /// Represents the chunk of a file
 #[derive(Debug, Clone, Copy, Serialize, Deserialize)]
